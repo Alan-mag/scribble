@@ -1,1 +1,16 @@
-{{outlet}}
+<div class="row">
+  <div class="jumbotron">
+    <h1>Admin Portal</h1>
+  </div>
+  <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <!--<button id="admin-select">admin</button>-->
+      {{#link-to 'create-article'}}<button class="btn btn-success">Write an Article</button>{{/link-to}}
+      <div id="articles-listed">
+        {{#each (sort-by "date:desc" model) as |article|}}
+          {{admin-article-list article=article}}
+        {{/each}}
+      </div>
+    </div>
+  <div class="col-md-3"></div>
+</div>

@@ -1,1 +1,16 @@
-{{yield}}
+<!-- media object -->
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src={{article.thumbnail}} alt="pic">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{article.title}} <small><i>{{article.author}}, {{moment-format comment.article.date 'll'}}</i></small></h4>
+    <p id="tile-text">{{article.description}}</p>
+    <div>
+    {{#link-to 'edit-article' article.id}}<button class="btn btn-warning">Edit</button>{{/link-to}}
+    </div>
+  </div>
+</div>
+<!-- end media object -->

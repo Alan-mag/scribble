@@ -1,1 +1,58 @@
-{{yield}}
+<div class="row">
+    <form>
+      <div class="col-md-6">
+        <!-- Title -->
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon">Title</span>
+            <!--<input value="title" type="text" class="form-control" id="title" aria-describedby="" placeholder="Article Title">-->
+            {{input value=article.title placeholder="" class="form-control" id="titleInput"}}
+          </div>
+        </div>
+
+        <!-- Author -->
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon">Author</span>
+            <!--<input value="author" type="text" class="form-control" id="author" aria-describedby="" placeholder="Author">-->
+            {{input value=article.author placeholder="" class="form-control" id="authorInput"}}
+          </div>
+        </div>
+        <!-- Description -->
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon">Description</span>
+            <!--<input value="author" type="text" class="form-control" id="author" aria-describedby="" placeholder="Author">-->
+            {{input value=article.description placeholder="Description" maxlength="120" class="form-control" id="descriptionInput"}}
+          </div>
+        </div>
+        <!-- Photo Url -->
+        <div class="form-group">
+          <label for="">Photo Url</label>
+          <!--<input value="photo" type="text" class="form-control" id="photo" aria-describedby="" placeholder="http://exampleurl.com/photo">-->
+          {{input value=article.photo placeholder="" class="form-control" id="photoInput"}}
+        </div>
+        <!-- Thumbnail Url -->
+        <div class="form-group">
+          <label for="">Thumbnail</label>
+          <!--<input value="thumbnail" type="text" class="form-control" id="thumbnail" aria-describedby="" placeholder="http://exampleurl.com/thumbnail">-->
+          {{input value=article.thumbnail placeholder="" class="form-control" id="thumbnailInput"}}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Text -->
+        <div class="form-group">
+          <!--<label for="exampleTextarea">Text</label>-->
+          <!--<textarea value="text" class="form-control" id="text" rows="20" placeholder="Your text..."></textarea>-->
+          {{textarea rows="20" value=article.text placeholder="" class="form-control" id="textInput"}}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group inline">
+          <button {{action 'update' article}} class="btn btn-info">Update</button>
+          <button {{action 'delete' article}} class="btn btn-danger">Delete</button>
+          {{#link-to 'admin-portal'}}<button type="submit" class="btn btn-default">Cancel</button>{{/link-to}}
+        </div>
+      </div>
+    </form>
+</div>

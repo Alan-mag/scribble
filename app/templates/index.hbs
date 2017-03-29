@@ -1,1 +1,19 @@
-{{outlet}}
+
+{{#each (take 1 (sort-by "date:desc" model)) as |article|}}
+  {{top-articles article=article}}
+{{/each}}
+<div class="row">
+  <div class="alert alert-info" role="alert"><i>More Writings...</i></div>
+  <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <!--<button id="admin-select">admin</button>-->
+      {{#link-to 'create-article'}}<button class="btn btn-success admin-button">Write an Article</button>{{/link-to}}
+      <div id="articles-listed">
+
+        {{#each (sort-by "date:desc" model) as |article|}}
+          {{article-tile article=article}}
+        {{/each}}
+      </div>
+    </div>
+  <div class="col-md-3"></div>
+</div>
