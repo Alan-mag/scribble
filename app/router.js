@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('view-article');
+  this.route('edit-article');
+  this.route('create-article');
+  this.route('admin-portal');
 });
 
 export default Router;
