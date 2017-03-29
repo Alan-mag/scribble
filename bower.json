@@ -1,6 +1,6 @@
 {
   "name": "scribble",
   "dependencies": {
-
+    "medium-editor": "5.14.4"
   }
 }

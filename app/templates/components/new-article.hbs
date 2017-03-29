@@ -6,7 +6,7 @@
           <div class="input-group">
             <span class="input-group-addon">Title</span>
             <!--<input value="title" type="text" class="form-control" id="title" aria-describedby="" placeholder="Article Title">-->
-            {{input value=title placeholder="Title" class="form-control" id="titleInput"}}
+            {{input required="required" value=title placeholder="Title" class="form-control" id="titleInput"}}
           </div>
         </div>
 
@@ -43,7 +43,6 @@
         <!-- Text -->
         <div class="form-group">
           <!--<label for="exampleTextarea">Text</label>-->
-          <!--<textarea value="text" class="form-control" id="text" rows="20" placeholder="Your text..."></textarea>-->
           {{textarea rows="20" value=text placeholder="Your text here..." class="form-control" id="textInput"}}
         </div>
       </div>

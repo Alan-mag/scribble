@@ -1,7 +1,8 @@
 {
   "predef": [
     "document",
-    "window",
+    "window",,
+    "MediumEditor"
     "-Promise"
   ],
   "browser": true,
