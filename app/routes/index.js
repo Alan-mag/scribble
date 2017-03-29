@@ -6,9 +6,6 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    clickAdmin: function() {
-      this.set('isAdmin', true);
-      console.log('admin selected');
-    },
+
   },
 });
