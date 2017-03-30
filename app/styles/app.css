@@ -3,6 +3,17 @@
   height: 42px;
 }
 
+.navbar {
+  background-color: #555;
+}
+
+.list-separator {
+  border-bottom: 1px solid #31708f;
+  border-radius: 0px;
+  width: 60%;
+}
+
+
 .media {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -49,7 +60,7 @@
 }
 
 .article-main-image {
-  max-width: 1100px;
+  max-width: 900px;
 }
 
 .article-main-image img {
@@ -74,4 +85,10 @@
 #logo-icon {
   max-width: 150px;
   margin-top: -34px;
+}
+
+#panels-blue {
+  color: #f5f5f5;
+  background-color: #0cb0c6;
+  border-color: #ddd;
 }
