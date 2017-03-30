@@ -18,10 +18,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyAHtIgvKDj-YFZtdooYltxdPh-sDZtoCu4",
-      authDomain: "chatter-d4b71.firebaseapp.com",
-      databaseURL: "https://chatter-d4b71.firebaseio.com",
-      storageBucket: "chatter-d4b71.appspot.com",
+      apiKey: "AIzaSyDvVMiowLF4kQ3OGJLpsd5zbB2OfLWP4ck",
+      authDomain: "scribble-c9830.firebaseapp.com",
+      databaseURL: "https://scribble-c9830.firebaseio.com",
+      storageBucket: "scribble-c9830.appspot.com",
     },
 
     APP: {

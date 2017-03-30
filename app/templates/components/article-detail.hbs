@@ -1,5 +1,27 @@
 <!-- <h1>This is Article Detail</h1>-->
-<img src={{article.photo}} alt={{article.title}}>
-<h2>{{article.title}}</h2>
-<p><i>{{article.author}}, {{moment-format comment.article.date 'll'}}</i></p>
-<p>{{article.text}}</p>
+
+<div class="row">
+  <div class="col-md-12">
+    <!--<h2>{{article.title}}</h2>-->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 article-main-image">
+    <img src={{article.photo}} alt={{article.title}}>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="row">
+    <div class="col-md-3">
+      <blockquote>
+        <p><h1>{{article.title}}</h1></p>
+        <footer>{{article.author}}, <cite>{{moment-format comment.article.date 'll'}}</cite></footer>
+      </blockquote>
+    </div>
+    <div class="col-md-9">
+      <p>{{article.text}}</p>
+    </div>
+  </div>
+</div>

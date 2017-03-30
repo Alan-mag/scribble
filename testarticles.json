@@ -1,0 +1,11 @@
+{ "articles": [{
+    "title": "Testing data",
+    "author": "Alan James",
+    "date": "",
+    "description": "Estate",
+    "text": "hey there",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg",
+
+  }]
+}
