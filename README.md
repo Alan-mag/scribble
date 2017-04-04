@@ -2,6 +2,7 @@
 
 This README outlines the details of collaborating on this Ember application.
 
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
