@@ -43,7 +43,8 @@
         <!-- Text -->
         <div class="form-group">
           <!--<label for="exampleTextarea">Text</label>-->
-          {{textarea rows="20" value=text placeholder="Your text here..." class="form-control" id="textInput"}}
+
+          {{tinymce-editor options=options value=text}}
         </div>
       </div>
       <div class="col-md-6">
