@@ -96,7 +96,7 @@
 }
 
 .article-auth-date {
-  background-color: #0cb0c6;
+  border-left: 5px solid #0cb0c6;
 }
 
 .article-body {
