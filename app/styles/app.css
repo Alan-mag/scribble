@@ -7,6 +7,12 @@
   height: 50vh;
 }
 
+#ember446_ifr {
+  height: 100%;
+}
+
+
+
 .jumbotron {
   background-color: #0cb0c6;
   color: white;
@@ -86,7 +92,11 @@
   padding: 15px;
 }
 #footer {
-  background-color: #f5f5f5;
+  background-color: #555555;
+}
+
+.article-auth-date {
+  background-color: #0cb0c6;
 }
 
 .article-body {
