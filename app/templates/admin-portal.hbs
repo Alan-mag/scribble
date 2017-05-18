@@ -1,11 +1,12 @@
 <div class="row">
-  <div class="jumbotron">
-    <h1>Admin Portal</h1>
+  <div class="jumbotron admin-jumbotron">
+    <h2>Admin Portal</h2>
   </div>
-  <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <!--<button id="admin-select">admin</button>-->
-      {{#link-to 'create-article'}}<button class="btn btn-success">Write an Article</button>{{/link-to}}
+
+  <div class="col-md-3 left-column-admin">
+    {{#link-to 'create-article'}}<button class="btn btn-success">Write an Article</button>{{/link-to}}
+  </div>
+    <div class="col-md-6 edit-articles-column">
       <div id="articles-listed">
         {{#each (sort-by "date:desc" model) as |article|}}
           {{admin-article-list article=article}}
