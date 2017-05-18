@@ -6,7 +6,7 @@
   <div class="col-md-3 left-column-admin">
     {{#link-to 'create-article'}}<button class="btn btn-success">Write an Article</button>{{/link-to}}
   </div>
-    <div class="col-md-6 edit-articles-column">
+    <div class="col-md-7 edit-articles-column">
       <div id="articles-listed">
         {{#each (sort-by "date:desc" model) as |article|}}
           {{admin-article-list article=article}}

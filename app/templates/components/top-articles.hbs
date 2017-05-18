@@ -5,8 +5,8 @@
         <div class="panel-heading" id="panels-blue">
           <h3 class="panel-title">Latest post</h3>
         </div>
-        <div class="panel-body">
-          <h2>{{article.title}}</h2>
+        <div class="panel-body top-panel">
+          <h2 class="top-article-title">{{article.title}}</h2>
           {{#link-to 'view-article' article.id}}<div id="top-img-container"><img src={{article.photo}}></div>{{/link-to}}
           <div><p>{{article.description}}</p></div>
         </div>
@@ -14,37 +14,3 @@
     </div>
   <div class="col-md-2"></div>
 </div>
-<!--
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="https://s-media-cache-ak0.pinimg.com/originals/db/14/a0/db14a07ac9ae1d8dc010cfa1a471ed90.jpg" alt="...">
-      <div class="caption">
-        <h3>Leaves</h3>
-        <p>Leaves are beginning to change their color...</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="https://s-media-cache-ak0.pinimg.com/originals/db/14/a0/db14a07ac9ae1d8dc010cfa1a471ed90.jpg" alt="...">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p>Leaves are beginning to change their color...</p>
-      </div>
-    </div>
-  </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="https://s-media-cache-ak0.pinimg.com/originals/db/14/a0/db14a07ac9ae1d8dc010cfa1a471ed90.jpg" alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>Leaves are beginning to change their color...</p>
-        </div>
-      </div>
-   </div>
-
-</div>
--->
