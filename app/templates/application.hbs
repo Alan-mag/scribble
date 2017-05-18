@@ -1,7 +1,24 @@
 <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          {{#link-to 'index'}}<a class="navbar-brand"><img id="logo-icon" alt="Sribble" src="assets/images/scribble.svg"></a>{{/link-to}}
+          {{#link-to 'index'}}
+          <a class="navbar-brand">
+
+          <svg viewBox="0 0 960 1200">
+            <symbol id="s-text">
+              <text text-anchor="middle" x="45%" y="12%">Scribble</text>
+            </symbol>
+
+            <g class = "g-ants">
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+          </svg>  
+            
+          </a>{{/link-to}}
         </div>
         <div id="navbar" class="">
           <ul class="nav navbar-nav navbar-right">
